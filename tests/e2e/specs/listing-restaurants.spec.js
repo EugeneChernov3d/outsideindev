@@ -1,7 +1,7 @@
 describe('Listing Restaurants', () => {
   it('shows restaurants from the server', () => {
     const sushiPlace = 'Sushi Place';
-    const pizzaPlace = 'Pizza Place';
+    const pizzaPlace = 'Pizza Placew';
 
     cy.server({force404: true});
 
