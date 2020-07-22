@@ -21,6 +21,8 @@ describe('restaurants', () => {
           restaurants: restaurants(api),
         },
       });
+      await store.dispatch('restaurants/load')
+      expect(store.state.restaurants.records).toEqual(records)
     });
   });
 });
